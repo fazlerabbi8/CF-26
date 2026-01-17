@@ -12,8 +12,8 @@ void solve()
         cin >> arr[i];
     }
 
-    // vector<int> copy_arr = arr;
-    // sort(copy_arr.begin(), copy_arr.end());
+    vector<int> copy_arr = arr;
+    sort(copy_arr.begin(), copy_arr.end());
 
     // i take it key value concept.key is card value and value will be its color
     map<int, int> color_arr;  
