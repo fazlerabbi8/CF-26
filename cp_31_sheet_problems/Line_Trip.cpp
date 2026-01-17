@@ -1,76 +1,115 @@
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
-int main()
-{
-    int t; // Number of test cases
+int main(){
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
+    int t;
     cin >> t;
-    while (t--)
-    {
-        long long n, x; // n: number of gas stations, x: destination point
+
+    while(t--){
+        int n, x;
         cin >> n >> x;
-        vector<long long> points_arr; // Array to store points including start, gas stations, and destination
-        points_arr.push_back(0); // Start point
-        for (int i = 0; i < n; i++) // Loop through each gas station
-        {
-            long long point;
-            cin >> point; // Read each gas station point
-            points_arr.push_back(point); // Add gas station point to the array
+
+        int initial_point = 0;
+        int initial_max_gas = 0;
+
+        for(int i = 0; i < n; i++){
+            int a;
+            cin >> a;
+            initial_max_gas = max(initial_max_gas, a - initial_point);
+            initial_point = a;
         }
-        points_arr.push_back(x); // Add destination point
-        n = points_arr.size(); // Update n to include start, gas stations, and destination
-        
-        long long max_distance_between_points = INT_MIN; // Variable to store the maximum distance between consecutive points
-        for (int i = 1; i < n; i++) // Loop through each point
-        {
-            if (i == n - 1) // If it's the last point (destination)
-                max_distance_between_points = 
-                max(max_distance_between_points, 2 * (points_arr[i] - points_arr[i - 1])); // Consider the round trip distance
-            else
-                max_distance_between_points = 
-                max(max_distance_between_points, points_arr[i] - points_arr[i - 1]); // Consider the one-way distance
-        }
-        cout << max_distance_between_points << endl; // Output the minimum tank capacity needed
+        initial_max_gas = max(initial_max_gas, 2 * (x - initial_point));
+        cout << initial_max_gas << "\n";
     }
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main()
+// {
+//     int t; // Number of test cases
+//     cin >> t;
+//     while (t--)
+//     {
+//         long long n, x; // n: number of gas stations, x: destination point
+//         cin >> n >> x;
+//         vector<long long> points_arr; // Array to store points including start, gas stations, and destination
+//         points_arr.push_back(0); // Start point
+//         for (int i = 0; i < n; i++) // Loop through each gas station
+//         {
+//             long long point;
+//             cin >> point; // Read each gas station point
+//             points_arr.push_back(point); // Add gas station point to the array
+//         }
+//         points_arr.push_back(x); // Add destination point
+//         n = points_arr.size(); // Update n to include start, gas stations, and destination
+        
+//         long long max_distance_between_points = INT_MIN; // Variable to store the maximum distance between consecutive points
+//         for (int i = 1; i < n; i++) // Loop through each point
+//         {
+//             if (i == n - 1) // If it's the last point (destination)
+//                 max_distance_between_points = 
+//                 max(max_distance_between_points, 2 * (points_arr[i] - points_arr[i - 1])); // Consider the round trip distance
+//             else
+//                 max_distance_between_points = 
+//                 max(max_distance_between_points, points_arr[i] - points_arr[i - 1]); // Consider the one-way distance
+//         }
+//         cout << max_distance_between_points << endl; // Output the minimum tank capacity needed
+//     }
+//     return 0;
+// }
 
 // Time Complexity (TC): O(n) = O(50)
 // Space Complexity (SC): O(n)
 
-#include<bits/stdc++.h>
-using namespace std;
+// #include<bits/stdc++.h>
+// using namespace std;
 
-int main(){
-    int t;
-    cin >> t;
-    while (t--)
-    {
-        long long n , x;
-        cin >> n >> x;
+// int main(){
+//     int t;
+//     cin >> t;
+//     while (t--)
+//     {
+//         long long n , x;
+//         cin >> n >> x;
 
-        vector<long long> arr;
-        arr.push_back(0);
-        for(int i = 0; i < n; i++){
-            long long point;
-            cin >> point;
-            arr.push_back(point);
-        }
-        arr.push_back(x);
-        n = arr.size();
+//         vector<long long> arr;
+//         arr.push_back(0);
+//         for(int i = 0; i < n; i++){
+//             long long point;
+//             cin >> point;
+//             arr.push_back(point);
+//         }
+//         arr.push_back(x);
+//         n = arr.size();
 
-        long long max_distance_between_points = INT_MIN;
-        for(int i = 1; i < n; i++){
-            if(i == n - 1){
-                max_distance_between_points = 
-                max(max_distance_between_points, 2 * (arr[i] - arr[i - 1]));
-            }else{
-                max_distance_between_points =
-                max(max_distance_between_points, arr[i] - arr[i - 1]);
-            }
-        }
-        cout << max_distance_between_points << "\n";
-    }
+//         long long max_distance_between_points = INT_MIN;
+//         for(int i = 1; i < n; i++){
+//             if(i == n - 1){
+//                 max_distance_between_points = 
+//                 max(max_distance_between_points, 2 * (arr[i] - arr[i - 1]));
+//             }else{
+//                 max_distance_between_points =
+//                 max(max_distance_between_points, arr[i] - arr[i - 1]);
+//             }
+//         }
+//         cout << max_distance_between_points << "\n";
+//     }
     
-    return 0;
-}
+//     return 0;
+// }
