@@ -22,15 +22,15 @@ void solve()
         color_arr[copy_arr[i]] = i % 2;
     }
 
-    bool valid = true;
-    for (int i = 0; i < n - 1; i++)
-    {
-        if (color_arr[arr[i]] == color_arr[arr[i + 1]])
-        {
-            valid = false;
-            break;
-        }
-    }
+    // bool valid = true;
+    // for (int i = 0; i < n - 1; i++)
+    // {
+    //     if (color_arr[arr[i]] == color_arr[arr[i + 1]])
+    //     {
+    //         valid = false;
+    //         break;
+    //     }
+    // }
 
     if (valid)
     {
