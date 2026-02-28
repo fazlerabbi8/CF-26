@@ -39,6 +39,17 @@ void solve()
 	// }
 	// cout<<t<<'\n';
 	// return;
+
+    // int maxn=0,x,n;
+	// 	cin>>n;
+	// 	int ans=n;
+	// 	while(n--){
+	// 		cin>>x;
+	// 		if(maxn<=x){
+	// 			ans--;maxn=x;
+	// 		}
+	// 	}
+	// 	cout<<ans<<'\n';
 }
 
 int main()
