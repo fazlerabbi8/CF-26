@@ -11,7 +11,7 @@ void solve()
     {
         cin >> arr[i];
     }
-    
+
     int countMax = 0;
 
     int maximum = 0;
@@ -28,6 +28,17 @@ void solve()
     int result = n - countMax;
 
     cout << result << "\n";
+
+    // alternative
+    // int n,s,t=0,k=0;
+	// cin>>n;
+	// while(n--){
+	// 	cin>>s;
+	// 	if(k>s)t++;
+	// 	else k=s;
+	// }
+	// cout<<t<<'\n';
+	// return;
 }
 
 int main()
