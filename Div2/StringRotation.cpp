@@ -11,20 +11,20 @@ void solve()
     string s;
     cin >> s;
 
-    int countBlook = 0;
+    int countBlock = 0;
     for (int i = 0; i < n; i++)
     {
         if (s[i] != s[i + 1])
         {
-            countBlook++;
+            countBlock++;
         }
     }
     if (countBlook != n && s[0] != s[n - 1])
     {
-        countBlook++;
+        countBlock++;
     }
 
-    cout << countBlook++ << "\n";
+    cout << countBlock++ << "\n";
 }
 
 int main()
