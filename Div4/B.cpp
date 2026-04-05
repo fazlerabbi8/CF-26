@@ -1,37 +1,39 @@
-#include <bits/stdc++.h>
-using namespace std;
+// #include <bits/stdc++.h>
+// using namespace std;
 
-void solve()
-{
-    int n = 7;
-    vector<int> arr(n);
+// void solve()
+// {
+//     int n = 7;
+//     vector<int> arr(n);
 
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
 
-    int totalNeg = 0;
-    for (int i = 0; i < 6; i++)
-    {
-        totalNeg += -arr[i];
-    }
+//     sort(arr.begin(), arr.end());
+//     int ans = 0;
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (i != n - 1)
+//         {
+//             arr[i] = arr[i] * -1;
+//         }
+//         ans += arr[i];
+//     }
+//     cout << ans << "\n";
+// }
 
-    int maximum = 0;
-    for (int i = 0; i < n; i++)
-    {
-        maximum = totalNeg + arr[n - 1];
-    }
-    cout << maximum << "\n";
-}
+// int main()
+// {
+//     ios_base::sync_with_stdio(false);
+//     cin.tie(0);
+//     cout.tie(0);
+//     int t;
+//     cin >> t;
 
-int main()
-{
-    int t;
-    cin >> t;
+//     while (t--)
+//         solve();
 
-    while (t--)
-        solve();
-
-    return 0;
-}
+//     return 0;
+// }
