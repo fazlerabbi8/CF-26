@@ -21,6 +21,18 @@ void solve()
         }
         ans += arr[i];
     }
+
+    // Alternative approach
+    // int maxIdx = max_element(arr.begin(), arr.end()) - arr.begin();
+
+    // int ans = 0;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if (i != maxIdx)
+    //         ans += arr[i] * -1; 
+    //     else
+    //         ans += arr[i];
+    // }
     cout << ans << "\n";
 }
 
