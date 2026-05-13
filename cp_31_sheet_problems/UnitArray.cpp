@@ -46,7 +46,7 @@ int main()
 
     while (t--)
     {
-        // solve();
+        solve();
     }
     return 0;
 }
