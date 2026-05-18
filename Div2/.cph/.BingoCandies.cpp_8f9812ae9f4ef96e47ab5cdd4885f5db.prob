@@ -1,0 +1,1 @@
+{"name":"Local: BingoCandies","url":"e:\\CF-26\\Div2\\BingoCandies.cpp","tests":[{"id":1779091993119,"input":"3\n3\n1 2 3\n3 1 4\n4 1 2\n3\n1 1 1\n2 3 4\n1 4 3\n3\n1 1 1\n1 1 1\n1 1 2\n","output":"YES\nYES\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CF-26\\Div2\\BingoCandies.cpp","group":"local","local":true}
