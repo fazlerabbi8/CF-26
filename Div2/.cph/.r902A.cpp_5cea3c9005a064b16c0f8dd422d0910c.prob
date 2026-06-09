@@ -1,1 +1,0 @@
-{"name":"Local: r902A","url":"e:\\CF-26\\Div2\\r902A.cpp","tests":[{"id":1780976992435,"input":"2\n4\n3 -4 5\n11\n-30 12 -57 7 0 -81 -68 41 -89 0\n","output":"-4\n265\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CF-26\\Div2\\r902A.cpp","group":"local","local":true}
