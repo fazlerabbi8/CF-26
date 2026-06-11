@@ -1,0 +1,1 @@
+{"name":"Local: r149A","url":"e:\\CF-26\\Educational\\r149A.cpp","tests":[{"id":1781157654901,"input":"3\n10 2\n10 3\n3 4\n","output":"2\n7 3\n1\n10\n1\n3\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CF-26\\Educational\\r149A.cpp","group":"local","local":true}
