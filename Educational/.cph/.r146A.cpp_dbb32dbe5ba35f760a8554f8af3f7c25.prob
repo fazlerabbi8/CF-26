@@ -1,0 +1,1 @@
+{"name":"Local: r146A","url":"e:\\CF-26\\Educational\\r146A.cpp","tests":[{"id":1781444807067,"input":"4\n5 3\n6 1\n7 4\n8 8\n","output":"YES\nYES\nNO\nYES\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CF-26\\Educational\\r146A.cpp","group":"local","local":true}
