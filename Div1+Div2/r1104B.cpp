@@ -33,7 +33,7 @@ void solve()
         while (j > i)
         {
             swap(a[j], a[j - 1]);
-                ans++;
+            ans++;
             j--;
         }
     }
