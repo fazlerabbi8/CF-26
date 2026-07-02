@@ -1,0 +1,1 @@
+{"name":"Local: r697A","url":"e:\\CF-26\\Div3\\r697A.cpp","tests":[{"id":1782979377244,"input":"6\n2\n3\n4\n5\n998244353\n1099511627776\n","output":"NO\nYES\nNO\nYES\nYES\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CF-26\\Div3\\r697A.cpp","group":"local","local":true}
